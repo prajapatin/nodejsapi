@@ -1,0 +1,25 @@
+{
+    "connectionTimeout": 600000,
+    "loggerConfig": {
+        "toolSettings": {
+            "name": "api-logs",
+            "streams": [
+                {
+                    "level": "info",
+                    "type": "rotating-file",
+                    "path": "/logs/apiLog.log",
+                    "period": "1d",
+                    "count": 7
+                }
+            ]
+        },
+        "moduleSettings": {
+            "device-log": {
+                "level": "info"
+            },
+            "default": {
+                "level": "info"
+            }
+        }
+    }
+}
